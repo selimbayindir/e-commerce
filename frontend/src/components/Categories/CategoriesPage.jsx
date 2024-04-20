@@ -1,6 +1,6 @@
 import CategoryItem from "./CategoryItem"
 import "./Categories.css"
-export const Categories = () => {
+const CategoriesPage = () => {
   return (
     <section className="categories">
     <div className="container">
@@ -19,4 +19,5 @@ export const Categories = () => {
     </div>
   </section>
   )
-}
+};
+export default CategoriesPage;

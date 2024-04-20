@@ -1,17 +1,17 @@
 
 import './App.css'
-import { Categories } from './components/Layout/Categories/Categories';
+import CategoriesPage from './components/Categories/CategoriesPage';
 import Footer from './components/Layout/Footer/Footer';
 import Header from './components/Layout/Header/Header';
 import Policy from './components/Layout/Policy/Policy';
-import Slider from './components/Layout/Slider/Sliders';
+import Slider from './components/Slider/Sliders';
 function App() {
 
   return (
     <div>
       <Header/>
       <Slider/>
-      <Categories/>
+      <CategoriesPage/>
     <Policy/>
     <Footer/>
     </div>
