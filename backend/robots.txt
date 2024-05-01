@@ -1,0 +1,62 @@
+Bölüm 8 
+-------
+42.ders
+-------
+npm init -y   package json dosyası oluşturur.
+server.js dosyası oluşturur.
+node server.js çalıştır.
+-------
+43.ders
+-------
+Express.js Kurulumu 
+https://www.npmjs.com/package/express
+ npm install express
+ Server.js
+ const express = require('express')
+const app = express()
+
+app.get('/', function (req, res) {
+  res.send('Hello World')
+})
+
+app.listen(3000)
+
+test etmek için bunu yaptı
+const express = require('express');
+const app = express();
+app.get('/', function (req, res) {
+    res.send('Hello World')
+  })
+  
+  app.listen(5000,()=>
+{
+    console.log(`Sunucu ${5000} portun da çalışıyor `);
+} )
+
+çalıştırmak içim package.json dosyasında 
+{
+  "name": "e-commerce-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node Server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
+nodemon kurulunca düzenleme yapılır
+https://www.npmjs.com/package/nodemon 
+nodemon api endpointlerinin oluşması için tekrar sunucu yu restart etmeye gerek kalmaması için 
+
+    "start": "nodemon Server.js"
+
+
+    mongoose bağlamak 
+    npm install mongoose
+Environment Variables   .env
+örneğin ConnectionStringi gizlemek için bunu kullancağız.
